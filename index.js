@@ -1,17 +1,5 @@
 
 const TelegramBot = require('node-telegram-bot-api');
-const express = require('express');
-const app = express()
-app.set("view engine", "ejs");
-app.get('/', (req, res) => {
-  res.json({ status: "err"})
-
-});
-app.use(express.static('public'));
-const port = 3000;
-app.listen(port, () => {
-  console.log(`yoi:${port}`);;
-});
 const igdl = require("@sasmeee/igdl");
 const chalk = require('chalk')
 const path = require("path")
